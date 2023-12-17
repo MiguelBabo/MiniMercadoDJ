@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@500;700&display=swap');
+
+/* For the all website */
+.majorT{ font-weight: 800; font-size: 36px;}
+.minorT{ font-weight: 500; font-size: 22px;}
+.paragraph{ opacity: .8; font-weight: 500; font-size: 18px;}
+.span{ opacity: .8; font-weight: 500; font-size: 16px;}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Afacad', sans-serif;
+    /* overflow-x: hidden; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* NavBar Desktop */
+
+#navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: #fdfdfd;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#navbar #logo{
+    margin: 0 100px 0 25px;
+}
+#navbar #logo img{
+    width: auto;
+    height: 10vh;
+}
+#navbar #btns{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+#navbar #btns a{
+    padding: 2px 16px;
+    font-size: 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: .3s;
+}
+#navbar #btns a:hover{
+    transform: scale(1.15,1.15);
+    transition: .3s;
+
+}
+#navbar #btnMobile{
+    display: none;
+}
+
+/* NavBar Mobile */
+
+#mobile #mobileOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+#mobile #mobileOptions div{
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+#mobile #mobileOptions div:hover{
+    background: #dddddd;
+}
+
+@media only screen and (max-width: 767px) {
+    body{
+        background-color: #fff;
+    }
+
+    #navbar{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    #navbar #btns{display: none;}
+    #navbar #btnMobile{
+        display: block; 
+        margin: 0 25px 0 25px;
+    }
+    #navbar #btnMobile button{
+        border: none;
+        background: transparent;
+    }
+
+    #mobile{
+        position: sticky;
+        top: 60px;
+        z-index: 1;
+    }
+    #mobile #mobileOptions{
+        z-index: 1;
+        background: #fff;
+    }
+    #mobile #mobileOptions div{
+        padding: 2px 16px;
+        font-size: 20px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        background: #ffffff;
+        transition: .3s;
+        overflow: hidden;
+        z-index: 1;
+
+    }
+    #mobile #mobileOptions div:hover{
+        transform: scale(1.15,1.15);
+        transition: .3s;
+        z-index: 1;
+
+    }
+    #mobile #mobileOptions div a{
+        color: black;
+        z-index: 1;
+
+    }
+}
