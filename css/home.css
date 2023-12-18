@@ -48,6 +48,7 @@
     }
     #inicio #text1{
         width: 100vw;
+        height: initial;
         padding: 45px;
         box-shadow: none;
 
