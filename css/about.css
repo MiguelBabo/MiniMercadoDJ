@@ -33,7 +33,7 @@
 @media only screen and (max-width: 512px){
     #sobre{
         width: 100vw;
-        min-height: 115vh;
+        min-height: 118vh;
         margin-bottom: 400px;
         display: flex;
         flex-direction: column;
