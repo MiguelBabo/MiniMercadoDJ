@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@500;700&display=swap');
+
+/* For the all website */
+:root{
+    --shadow: hsla(0, 0%, 0%, .12);
+}
+
+.majorT{ font-weight: 800; font-size: 2.25rem;}
+.minorT{ font-weight: 500; font-size: 1.375rem;}
+.paragraph{ opacity: .8; font-weight: 500; font-size: 1.125rem;}
+.span{ opacity: .8; font-weight: 500; font-size: 1.125rem ;}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Afacad', sans-serif;
+    /* overflow-x: hidden; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+#backToTop{
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 160px; /*Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+}
+
+#backToTop #backToTopBtn{
+    width: 60px;
+    display: none;
+    padding: 17px;
+    background: #fff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--shadow);
+}
+
+/* NavBar Desktop */
+
+#navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: #fdfdfd;
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+}
+#navbar #logo{
+    margin: 0 100px 0 25px;
+}
+#navbar #logo img{
+    width: auto;
+    height: 10vh;
+}
+#navbar #btns{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+#navbar #btns a{
+    padding: 2px 16px;
+    font-size: 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: .3s;
+}
+#navbar #btns a:hover{
+    transform: scale(1.15,1.15);
+    transition: .3s;
+
+}
+#navbar #btnMobile{
+    display: none;
+}
+
+/* NavBar Mobile */
+
+#mobile #mobileOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mobile #mobileOptions div{
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#mobile #mobileOptions div:hover{
+    background: #dddddd;
+}
+
+@media only screen and (max-width: 512px) {
+    body{
+        background-color: #fff;
+        overflow-x: hidden;
+    }
+
+    #navbar{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 0; 
+        z-index: 1;
+    }
+    #navbar #btns{display: none;}
+    #navbar #btnMobile{
+        display: block; 
+        margin: 0 25px 0 25px;
+    }
+    #navbar #btnMobile button{
+        border: none;
+        background: transparent;
+    }
+
+    #mobile{
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+    }
+    #mobile #mobileOptions{
+        z-index: 1;
+        background: #fff;
+    }
+    #mobile #mobileOptions div{
+        padding: 2px 16px;
+        font-size: 20px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        background: #ffffff;
+        transition: .3s;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #mobile #mobileOptions div:hover{
+        transform: scale(1.15,1.15);
+        transition: .3s;
+        z-index: 1;
+
+    }
+    #mobile #mobileOptions div a{
+        color: black;
+        z-index: 1;
+    }
+}
