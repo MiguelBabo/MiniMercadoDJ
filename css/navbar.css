@@ -30,7 +30,7 @@
 }
 
 #backToTop #backToTopBtn{
-    width: 60px;
+    width: 63px;
     display: none;
     padding: 17px;
     background: #fff;
@@ -39,15 +39,19 @@
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 0 20px var(--shadow);
+    transition: .3s;
 }
-
+#backToTop #backToTopBtn:hover{
+    transition: .3s;
+    transform: scale(1.1,1.1);
+}
 /* NavBar Desktop */
 
 #navbar{
     width: 100vw;
     display: flex;
     align-items: center;
-    background: #fdfdfd;
+    background: #fff;
     position: sticky;
     top: 0; 
     z-index: 1;
