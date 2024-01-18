@@ -1,0 +1,195 @@
+#ofertas{
+    width: 100vw;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+#ofertas h1{
+    text-align: center;
+}
+#ofertas #promos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#ofertas #container1{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 50px; */
+}
+#ofertas #promo1{
+    width: 80vw;
+    height: 17vh;
+    border-radius: 6px;
+    box-shadow: 0 0 20px var(--shadow);
+    background-image: url("/assets/carne.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: hsla(0, 0%, 0%, 0.55);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+#ofertas #promo1 h2{
+    user-select: none;
+}
+#ofertas #promo1:hover{
+    /* transform: scale(1.05,1.05); */
+    transition: .3s;
+    background-color: hsla(0, 0%, 0%, 0.65);
+}
+#ofertas #promo1info{
+    width: 100vw;
+    padding: 50px;
+    padding-left: 9.948vw;
+    padding-right: 9.948vw;
+    display: none;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 24.5px;
+}
+#ofertas #promo1info .produto{
+    width: 15vw;
+    height: auto;
+    padding: 30px 100px;
+    box-shadow: 0 0 20px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    border-radius: 6px;
+}
+#ofertas #promo1info .produto:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+}
+#ofertas #promo1info .produto .imgCarne img{
+    width: 200px;
+    height: 200px;
+}
+#ofertas #promo1info .produto .preco{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ofertas #container4{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 50px; */
+}
+#ofertas #promo2{
+    width: 80vw;
+    height: 17vh;
+    border-radius: 6px;
+    box-shadow: 0 0 20px var(--shadow);
+    background-image: url("/assets/verdurasefrutas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: hsla(0, 0%, 0%, 0.55);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+#ofertas #promo2 h2{
+    user-select: none;
+}
+#ofertas #promo2:hover{
+    /* transform: scale(1.05,1.05); */
+    transition: .3s;
+    background-color: hsla(0, 0%, 0%, 0.65);
+}
+#ofertas #promo2info{
+    width: 100vw;
+    padding: 50px;
+    padding-left: 9.948vw;
+    padding-right: 9.948vw;
+    display: none;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 24.5px;
+}
+#ofertas #promo2info .produto{
+    width: 15vw;
+    height: auto;
+    padding: 30px 100px;
+    box-shadow: 0 0 20px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    border-radius: 6px;
+}
+#ofertas #promo2info .produto:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+}
+#ofertas #promo2info .produto .imgCarne img{
+    width: 200px;
+    height: 200px;
+}
+#ofertas #promo2info .produto .preco{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 512px) {
+    #ofertas #promo1info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #ofertas #promo1info .produto{
+        width: 80vw;
+        height: auto;
+    }
+
+    #ofertas #promo2info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #ofertas #promo2info .produto{
+        width: 80vw;
+        height: auto;
+    }
+}

@@ -42,7 +42,7 @@
 
 #avaliacoes #container3 .review{
     width: 26vw;
-    height: 190px;
+    min-height: 190px;
     padding: 25px;
     box-shadow: 0 0 20px var(--shadow);
     display: flex;

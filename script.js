@@ -48,3 +48,25 @@ function topFunction() {
 }
 
 backToTopBtn.addEventListener('click', topFunction)
+
+const promo1 = document.getElementById('promo1')
+const promo1info = document.getElementById('promo1info')
+const promo2 = document.getElementById('promo2')
+const promo2info = document.getElementById('promo2info')
+
+
+promo1.addEventListener('click', () => {
+  if(promo1info.style.display == "none"){
+    promo1info.style.display = 'flex'
+  }else{
+    promo1info.style.display = 'none'
+  }
+})
+
+promo2.addEventListener('click', () => {
+  if(promo2info.style.display == "none"){
+    promo2info.style.display = 'flex'
+  }else{
+    promo2info.style.display = 'none'
+  }
+})

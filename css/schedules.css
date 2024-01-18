@@ -26,14 +26,12 @@
     line-height: 0;
     transform: rotate(180deg);
 }
-
 .custom-shape-divider-bottom-1702763599 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 69px;
 }
-
 .custom-shape-divider-bottom-1702763599 .shape-fill {
     fill: #FFFFFF;
 }
@@ -51,6 +49,10 @@
     flex-direction: column;
     background-color: #ff8229;
     gap: 40px;
+}
+
+#horarios #title{
+    text-align: center;
 }
 
 #horarios #container2{

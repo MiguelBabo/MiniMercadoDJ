@@ -1,60 +1,48 @@
 #inicio{
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    padding-left: 150px;
     align-items: center;
     z-index: 0;
+    background-image: url("/assets/fachada.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.65);
+    background-blend-mode: multiply;
+    box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.12);
 } 
-
 #inicio #text1{
-    width: 40vw;
-    padding: 62px;
-    box-shadow: 0 0 20px var(--shadow);
-    border-radius: 6px;
-}
-#inicio #text1 #container1{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: start;
+    font-size: 120px;
+    color: #fff;
 }
-
-#inicio #img1{
-    padding: 25px;
-    box-shadow: 0 0 20px var(--shadow);
-    border-radius: 6px;
+#inicio #text1 div{
+    height: 130px;
 }
-
-#inicio #img1 img{
-    border-radius: 6px;
+#inicio #text1 #orange{
+    color: var(--orange);
 }
-
 
 @media only screen and (max-width: 512px){
     #inicio{
         width: 100vw;
-        height: auto;
+        max-height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: center;
+        justify-content: center;
+        align-items: start;
+        padding-left: 60px;
+        background-position-x: -359px;
+        background-attachment: fixed;
     }
-
-    #inicio #img1{
-        width: auto;
-        height: auto;
-        box-shadow: none;
-    }
-
-    #inicio #img1 img{
-        width: 100%;
-        height: auto;
-    }
-
     #inicio #text1{
-        width: 100vw;
-        height: auto;
-        padding: 45px;
-        box-shadow: none;
+        font-size: 50px;
+    }
+    #inicio #text1 div{
+        height: 70px;
     }
 }

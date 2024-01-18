@@ -4,13 +4,19 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
 
 :root{
     --shadow: hsla(0, 0%, 0%, .12);
+    --orange: #ff8229;
 }
 
 .majorT{ font-weight: 800; font-size: 2.25rem;}
 .minorT{ font-weight: 500; font-size: 1.375rem;}
+.linedT{ text-decoration: line-through; opacity: .5; }
 .paragraph{ opacity: .8; font-weight: 500; font-size: 1.125rem;}
 .span{ opacity: .8; font-weight: 500; font-size: 1.125rem ;}
 
@@ -31,13 +37,16 @@ html{
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /*Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
+    backdrop-filter: blur(10px);
+    backdrop-filter: saturate(115px);
+    border-radius: 50px;
 }
 
 #backToTop #backToTopBtn{
     width: 63px;
     display: none;
     padding: 17px;
-    background: #fff;
+    background: transparent;
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -49,14 +58,18 @@ html{
     transition: .3s;
     transform: scale(1.1,1.1);
 }
+
+#separator{
+    width: 100vw;
+    height: 20vh;
+}
 /* NavBar Desktop */
 
 #navbar{
     width: 100vw;
-    display: flex;
-    align-items: center;
     background: #fff;
     position: sticky;
+    display: flex;
     top: 0; 
     z-index: 1;
 }
@@ -69,6 +82,7 @@ html{
 }
 #navbar #btns{
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 25px;
 }
@@ -84,7 +98,6 @@ html{
 #navbar #btns a:hover{
     transform: scale(1.15,1.15);
     transition: .3s;
-
 }
 #navbar #btnMobile{
     display: none;
@@ -117,14 +130,14 @@ html{
         width: 100vw;
         display: flex;
         justify-content: space-between;
-        position: relative;
+        position: absolute;
         top: 0; 
         z-index: 1;
     }
     #navbar #btns{display: none;}
     #navbar #btnMobile{
         display: block; 
-        margin: 0 25px 0 25px;
+        margin: 30px 25px 0 25px;
     }
     #navbar #btnMobile button{
         border: none;

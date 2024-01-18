@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/schedules.css">
     <link rel="stylesheet" href="css/reviews.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/offers.css">
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="shortcut icon" href="assets/LogoD&J.png" type="image/x-icon">
@@ -19,58 +19,135 @@
 </head>
 <body>
     <section id="navbar">
-        <div id="logo">
-            <img src="assets/LogoD&J.png" alt="logo">
+            <div id="logo">
+                <img src="assets/LogoD&J.png" alt="logo">
+            </div>
+            <div id="btns">
+                <a href="#inicio" id="home">Início</a>
+                <a href="#ofertas" id="offers">Ofertas</a>
+                <a href="#horarios" id="schedules">Horários</a>
+                <a href="#avaliacoes" id="reviews">Avaliações</a>
+                <a href="#footer" id="contact">Contato</a>
+            </div>
+            <div id="btnMobile">
+                <button id="showMobileMenu">
+                    <img id='icon' src="assets/icons8-cardápio.svg" alt="menu">
+                </button>
         </div>
-        <div id="btns">
-            <a href="#inicio" id="home">Início</a>
-            <a href="#sobre" id="about">Sobre</a>
-            <a href="#horarios" id="schedules">Horários</a>
-            <a href="#avaliacoes" id="reviews">Avaliações</a>
-            <a href="#footer" id="contact">Contato</a>
-        </div>
-        <div id="btnMobile">
-            <button id="showMobileMenu">
-                <img id='icon' src="assets/icons8-cardápio.svg" alt="menu">
-            </button>
-        </div>
-        
     </section>
     <section id="mobile">
         <div id="mobileOptions">
             <div><a href="#inicio" id="home" class="mobileNavBtns">Início</a></div>
-            <div><a href="#sobre" id="about" class="mobileNavBtns">Sobre</a></div>
+            <div><a href="#ofertas" id="offers" class="mobileNavBtns">Ofertas</a></div>
             <div><a href="#horarios" id="schedules" class="mobileNavBtns">Horários</a></div>
             <div><a href="#avaliacoes" id="reviews" class="mobileNavBtns">Avaliações</a></div>
             <div><a href="#footer" id="contact" class="mobileNavBtns">Contato</a></div>
         </div>
     </section>
     <section id="inicio">
-        <div id="img1">
-            <img src="assets/fachada.jpg" alt="Fachada Mini Mercado D&J">
-        </div>
         <div id="text1">
-            <div id="container1">
-                <div>
-                    <h1 class="majorT">Nossa Missão</h1>
-                </div>
-                <div>
-                    <!-- <h2 class="minorT">Lorem ipsum dolor sit amet.</h2> -->
-                    <p class="paragraph">Na D&J Mini Mercado, nossa missão é ser a referência de excelência e conveniência para a comunidade local. Estamos comprometidos em oferecer produtos frescos e de qualidade, apoiando fornecedores locais sempre que possível. Buscamos não apenas satisfazer, mas superar as expectativas dos nossos clientes, proporcionando um ambiente acolhedor e serviços personalizados. Além disso, acreditamos na importância de contribuir para o desenvolvimento da nossa comunidade, participando ativamente de iniciativas sociais e promovendo práticas sustentáveis. Na D&J, não somos apenas um mini mercado; somos uma extensão calorosa e confiável da vida cotidiana de nossos clientes, comprometidos em construir laços sólidos e duradouros com a comunidade que servimos.
-                    </p>
-                </div>
-            </div>
+            <div><h1>Mini</h1></div>
+            <div><h1>Mercado</h1></div>
+            <div id="orange"><h1>D&J</h1></div>
         </div>
     </section>
-    <section id="sobre">
-        <div id="image2">
-            <img src="assets/20180922_132053.jpg" alt="Mini Mercado D&J">
-        </div>
-        <div id="text4">
+    <section id="ofertas">
+        <h1 class="majorT">Confira as ofertas da semana!</h1>
+
+        <div id="promos">
+            <div id="container1">
+                <div id="promo1">
+                    <h2>Carnes</h2>
+                </div>
+                <div id="promo1info" style="display: none;">
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Carnes/patinho.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Patinho</h1>
+                            <h3 class="linedT">De: R$40,00/Kg </h3>
+                            <h2>Por: R$34,90/Kg </h2>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Carnes/pichanha.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Picanha</h1>
+                            <h3 class="linedT">De: R$65,00/Kg </h3>
+                            <h2>Por: R$55,90/Kg </h2>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Carnes/contrafile.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Contra-Filé</h1>
+                            <h3 class="linedT">De: R$45,00/Kg </h3>
+                            <h2>Por: R$39,90/Kg </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="container4">
-                <h1 class="majorT">Sobre Nós</h1>
-                <!-- <h2 class="minorT">Lorem ipsum dolor sit amet.</h2> -->
-                <p class="paragraph">No coração do bairro, o Mini Mercado D&J é mais do que apenas um estabelecimento comercial; é uma extensão vibrante e essencial da vida local. Fundado com a paixão por atender às necessidades da nossa comunidade, o D&J Mini Mercado tem uma história enraizada na dedicação ao fornecimento de produtos frescos, seleções de qualidade e um atendimento caloroso. Nossa jornada é moldada por valores de integridade, transparência e compromisso com o apoio aos produtores locais. Ao adentrar nossas portas, os clientes são recebidos por uma atmosfera familiar, onde cada compra é mais do que uma transação; é um gesto de apoio à nossa visão compartilhada de construir uma comunidade mais forte e interconectada. Estamos orgulhosos de ser um ponto de encontro confiável para todos os que valorizam a autenticidade e a qualidade em suas experiências de compra diárias. No D&J Mini Mercado, não apenas vendemos produtos; construímos relações significativas que resistem ao teste do tempo.</p>
+                <div id="promo2">
+                    <h2>Hortifrúti</h2>
+                </div>
+                <div id="promo2info" style="display: none;">
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Hortifruti/tomate.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Tomate</h1>
+                            <h3 class="linedT">De: R$10,00/Kg </h3>
+                            <h2>Por: R$7,90/Kg </h2>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Hortifruti/cebola.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Cebola</h1>
+                            <h3 class="linedT">De: R$9,00/Kg </h3>
+                            <h2>Por: R$6,90/Kg </h2>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Hortifruti/limao.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Limão</h1>
+                            <h3 class="linedT">De: R$5,00/Kg </h3>
+                            <h2>Por: R$3,90/Kg </h2>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Hortifruti/pepino.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Pepino</h1>
+                            <h3 class="linedT">De: R$5,00/Kg </h3>
+                            <h2>Por: R$2,90/Kg </h2>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class='imgCarne'>
+                            <img src="assets/Hortifruti/batata.jpg" alt="carne patinho">
+                        </div>
+                        <div class="preco">
+                            <h1 class="majorT">Batata</h1>
+                            <h3 class="linedT">De: R$8,00/Kg </h3>
+                            <h2>Por: R$5,90/Kg </h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

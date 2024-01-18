@@ -1,6 +1,7 @@
 #footer{
     width: 100vw;
-    height: 40vh;
+    min-height: 50vh;
+    height: auto;
     background: #ff8229;
     display: flex;
     flex-direction: column;
