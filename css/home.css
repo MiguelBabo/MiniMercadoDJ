@@ -5,7 +5,7 @@
     padding-left: 150px;
     align-items: center;
     z-index: 0;
-    background-image: url("../assets/fachada.jpg");
+    background-image: url("/assets/fachada.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

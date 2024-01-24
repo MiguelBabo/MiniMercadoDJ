@@ -31,7 +31,7 @@
     height: 17vh;
     border-radius: 6px;
     box-shadow: 0 0 20px var(--shadow);
-    background-image: url("../assets/carne.jpg");
+    background-image: url("/assets/carne.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -59,7 +59,7 @@
     padding-left: 9.948vw;
     padding-right: 9.948vw;
     display: none;
-    justify-content: start;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     gap: 24.5px;
@@ -108,7 +108,7 @@
     height: 17vh;
     border-radius: 6px;
     box-shadow: 0 0 20px var(--shadow);
-    background-image: url("../assets/verdurasefrutas.jpg");
+    background-image: url("/assets/verdurasefrutas.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -136,7 +136,7 @@
     padding-left: 9.948vw;
     padding-right: 9.948vw;
     display: none;
-    justify-content: start;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     gap: 24.5px;
@@ -191,5 +191,22 @@
     #ofertas #promo2info .produto{
         width: 80vw;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    #ofertas #promo1{
+        width: 82vw;
+    }
+    #ofertas #promo2{
+        width: 82vw;
+    }    
+
+
+    #ofertas #promo1info{
+        justify-content: center;
+    }
+    #ofertas #promo2info{
+        justify-content: center;
     }
 }
